@@ -1,0 +1,34 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "me.yjh.SpringExternalConfig.jihoonProperties",
+      "name": "jihoon",
+      "type": "me.yjh.SpringExternalConfig.jihoonProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "me.yjh.SpringExternalConfig.jihoonProperties",
+      "defaultValue": 0,
+      "name": "jihoon.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "me.yjh.SpringExternalConfig.jihoonProperties",
+      "name": "jihoon.fullname",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "me.yjh.SpringExternalConfig.jihoonProperties",
+      "name": "jihoon.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "me.yjh.SpringExternalConfig.jihoonProperties",
+      "defaultValue": "30s",
+      "name": "jihoon.session-timeout",
+      "type": "java.time.Duration"
+    }
+  ]
+}

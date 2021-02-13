@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--   이 방법은 일일히 빈을 설정해줘야 하는 번거로움이 있다!! 그래서 아래 방법 으로 해보자!!  -->
+    <!-- 가장 기본적인 xml beans 설정 파일 이다-->
+        <!-- bean id="bookService"
+             class="me.whiteship.springapplicationcontext.BookService">
+             <property name="bookRepository" ref="bookRepository" />
+              <!- name에 bookRepository 는 bookservice에서 생성한 세터를 가져온 것이다 -->
+              <!-- ref 는 레퍼런스로 아래 있는 빈의 id를 의미한다!!  즉, 다른 beans을 참조한다는  -->
+
+              <!--  강의 7분 22초 부터 시작하기 (20.04.02 16:27)-->
+
+        <!--/bean>
+        <bean id="bookRepository"
+              class="me.whiteship.springapplicationcontext.BookRepository" />
+        -->
+
+        <!-- 뒤에 적은 패키지에서 스캐닝해서 beans을 등록하겠다 라는 의미 : 위보다 쉽게 등록 가능  -->
+        <context:component-scan base-package="me.whiteship.springapplicationcontext" />
+
+
+
+</beans>

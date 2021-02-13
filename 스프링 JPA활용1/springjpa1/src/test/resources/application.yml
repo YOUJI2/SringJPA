@@ -1,0 +1,22 @@
+#spring:
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/springjpa1
+##    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: create
+#    properties:
+#      hibernate:
+##        show_sql: true
+#        format_sql: true
+#    generate-ddl: true
+
+# 기본이 ddl 이 create_ drop 으로 마지막에 자원정리로 다 날려준다.
+
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type: trace
